@@ -1,4 +1,9 @@
-from app.calculator import add, safe_divide
-import pytest
+# tests/test_calculator_fail.py
 
-def test_add
+from app.calculator import Calculator
+
+def test_fail_example():
+    calc = Calculator()
+    # This is intentionally wrong to demonstrate a failing test
+    assert calc.add(2, 2) == 5
+
